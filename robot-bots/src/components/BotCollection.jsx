@@ -15,11 +15,12 @@ const BotCollection = ({ bots = [], onEnlist, sort }) => {
       return 0;
     }
   });
+  console.log(sortedBots);
 
   return (
     <div className="bot-collection">
       {sortedBots.map(bot => (
-        <Bot key={bot.id} bot={bot} onEnlist={onEnlist}/>
+        <Bot key={bot.id} bot={bot} onEnlist={onEnlist}/> 
       ))}
     </div>
   );
